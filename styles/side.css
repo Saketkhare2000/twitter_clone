@@ -1,0 +1,160 @@
+.sidebar {
+  border-right: 1px solid #3e4347;
+  position: fixed;
+  width: 25%;
+  background: #15202b;
+  height: 100vh;
+  color: white;
+  overflow-y: auto;
+}
+
+.sidebar .logo {
+  padding-top: 0.3rem;
+  margin-left: 8rem;
+  cursor: pointer;
+}
+
+.sidebar .logo i {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.sidebar .logo i:hover {
+  background: #213244;
+}
+
+.sidebar .list {
+  height: auto;
+}
+
+.sidebar .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.5rem;
+  margin-left: 8rem;
+}
+
+.sidebar .list ul .selected {
+  color: #26acff;
+}
+
+.sidebar .list ul li {
+  margin: 0.1rem 0rem;
+  list-style: none;
+  cursor: pointer;
+  width: 90%;
+  padding: 1rem;
+  line-height: 24px;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sidebar .list ul li:hover {
+  background: #213244;
+  color: #26acff;
+  width: 90%;
+}
+
+.sidebar .list ul li i {
+  width: 20px;
+  margin-right: 20px;
+  text-align: center !important;
+}
+
+.sidebar .tweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sidebar .tweet button {
+  all: unset;
+  margin-top: 0.5rem;
+  width: 50%;
+  font-weight: bold;
+  background: #26acff;
+  text-align: center;
+  padding: 0.9rem 1.4rem;
+  cursor: pointer;
+  border-radius: 9999px;
+  font-size: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.sidebar .tweet button:hover {
+  background: #229ce7;
+}
+
+.sidebar .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 2.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .profile .inside {
+  height: 10vh;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar .profile .inside .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+.sidebar .profile .inside .left i {
+  margin-right: 20px;
+}
+
+.sidebar .profile .inside .left p {
+  font-size: small;
+  opacity: 70%;
+}
+
+.sidebar .profile .inside:hover {
+  background: #213244;
+  border-radius: 9999px;
+}
+/*# sourceMappingURL=side.css.map */

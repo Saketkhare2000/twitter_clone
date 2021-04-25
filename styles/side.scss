@@ -1,0 +1,112 @@
+.sidebar {
+  border-right: 1px solid rgb(62, 67, 71);
+  position: fixed;
+  width: 25%;
+  background: #15202b;
+  height: 100vh;
+  color: white;
+  overflow-y: auto;
+  .logo {
+    padding-top: 0.3rem;
+    margin-left: 8rem;
+    cursor: pointer;
+    i {
+      transition: all 0.2s ease;
+      border-radius: 50%;
+      padding: 0.8rem;
+      &:hover {
+        background: #213244;
+      }
+    }
+  }
+  .list {
+    height: auto;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0.5rem;
+      margin-left: 8rem;
+      .selected {
+        color: #26acff;
+      }
+      li {
+        margin: 0.1rem 0rem;
+        // background: #4c77a1;
+        list-style: none;
+        cursor: pointer;
+        width: 90%;
+        padding: 1rem;
+        line-height: 24px;
+        transition: background 0.2s ease;
+        border-radius: 9999px;
+        font-weight: bold;
+        font-size: 20px;
+        &:hover {
+          background: #213244;
+          color: #26acff;
+          width: 90%;
+        }
+        i {
+          width: 20px;
+          margin-right: 20px;
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  .tweet {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    button {
+      all: unset;
+      margin-top: 0.5rem;
+      width: 50%;
+      font-weight: bold;
+      background: #26acff;
+      text-align: center;
+      padding: 0.9rem 1.4rem;
+      cursor: pointer;
+      border-radius: 9999px;
+      font-size: 15px;
+      transition: all 0.2s ease;
+      &:hover {
+        background: #229ce7;
+      }
+    }
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.6rem;
+    align-items: center;
+    .inside {
+      height: 10vh;
+      width: 75%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 20%;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      .left {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        i {
+          margin-right: 20px;
+        }
+        p {
+          font-size: small;
+          opacity: 70%;
+        }
+      }
+      &:hover {
+        background: #213244;
+        border-radius: 9999px;
+      }
+    }
+  }
+}

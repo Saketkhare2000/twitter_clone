@@ -1,0 +1,197 @@
+@import './side.scss';
+@import './main.scss';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+}
+.wrapper {
+  display: flex;
+}
+
+.middle {
+  width: 40%;
+  margin-left: 25%;
+  background: #192734;
+  //   height: 100vh;
+  color: white;
+  border-right: 1px solid rgb(62, 67, 71);
+  
+  .heading {
+    background: #15202b;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+    border-bottom: 1px solid rgb(62, 67, 71);
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 1rem 1rem;
+    }
+    i {
+      color: #26acff;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 0.2s ease;
+      border-radius: 50%;
+      padding: 1rem 1rem;
+      &:hover {
+        background: #213244;
+        transform: rotate(20deg);
+      }
+    }
+  }
+  .part_two {
+    background: #15202b;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid rgb(62, 67, 71);
+    .new_tweet {
+      background: #15202b;
+      display: flex;
+      padding: 0rem 1rem;
+      align-items: center;
+      input {
+        all: unset;
+        margin-left: 10px;
+        font-size: 20px;
+        width: 100%;
+        padding: 1rem 0rem;
+        &::placeholder {
+          color: #6b7c8b;
+        }
+      }
+    }
+    .media_bottom {
+      background: #15202b;
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+      margin-left: 10%;
+      .media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        margin-top: 0.2rem;
+        i {
+          margin: 0rem 0.5rem;
+          color: #1da1f2;
+          cursor: pointer;
+          font-size: 18px;
+          padding: 0.8rem;
+          border-radius: 50%;
+          &:hover {
+            background: #26acff1c;
+            color: #26acff;
+          }
+        }
+      }
+      button {
+        all: unset;
+        margin-top: 0.5rem;
+        width: 50%;
+        font-weight: bold;
+        background: #19608e;
+        color: #738694;
+        font-weight: bold;
+        text-align: center;
+        padding: 0.6rem 1.4rem;
+        cursor: pointer;
+        border-radius: 9999px;
+        font-size: 15px;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+  .main_tweet {
+    padding: 1rem 0rem;
+    border-top: 1px solid rgb(62, 67, 71);
+    border-bottom: 1px solid rgb(62, 67, 71);
+    background: #15202b;
+    // margin-top: 10px;
+    transition: all 0.2s ease-out;
+    &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .card-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0rem 1rem 0rem 0rem;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        align-items: center;
+        h3 {
+          font-size: 16px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      i {
+        padding: 1rem;
+      }
+      span {
+        padding: 0rem 0.3rem;
+        color: #424f5b;
+      }
+      .right {
+        i {
+          color: #65788a;
+          cursor: pointer;
+          border-radius: 50%;
+          &:hover {
+            background: #213244;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+    }
+    .card-text {
+      padding: 0rem 4rem;
+      height: auto;
+      transform: translateY(-25%);
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-evenly;
+      color: #424f5b;
+      i {
+        cursor: pointer;
+        padding: 0.4rem;
+        color: #65788a;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+      .fa-comment {
+        &:hover {
+          background: #26acff38;
+          color: #26acff;
+        }
+      }
+      .fa-retweet {
+        &:hover {
+          background: rgba(39, 192, 39, 0.13);
+          color: rgb(39, 192, 39);
+        }
+      }
+      .fa-heart {
+        &:hover {
+          background: rgba(255, 0, 0, 0.103);
+          color: red;
+        }
+      }
+      .fa-share-square {
+        &:hover {
+          background: #26acff38;
+          color: #26acff;
+        }
+      }
+    }
+  }
+}
